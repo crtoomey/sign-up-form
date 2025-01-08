@@ -84,12 +84,16 @@ h6 {
 
 /* Flex for the main container */
 
+body {
+    width: 100vw;
+}
+
 .main-container {
     display: flex;
     flex-direction: row;
-    gap: 0;
+    gap: 4rem;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 /* Style for the logo container */
@@ -98,7 +102,7 @@ h6 {
     background-image: url("./resources/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 33%;
     color: white;
 }
 
@@ -116,6 +120,7 @@ h6 {
 .logo-text {
     font-family: norse-bold, sans-serif;
     font-size: 5rem;
+    opacity: 100%;
 }
 
 #odin-logo {
@@ -137,4 +142,34 @@ h6 {
 
 .cred a:visited {
     color: white;
+}
+
+
+/* style for form container */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+/* form styles */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-row-1,
+.form-row-2,
+.form-row-3 {
+    display: flex;
+    flex-direction: row;
 }
