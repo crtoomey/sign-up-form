@@ -1,3 +1,140 @@
-html {
-    background-color: bisque;
+/* CSS Reset by Josh Comeau */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* End CSS Reset */
+
+
+
+/* Custom CSS by Colin Toomey */
+
+/* custom font for logo */
+@font-face {
+    font-family: norse-bold;
+    src: url(./resources/Norse-Bold.otf);
+}
+
+/* Flex for the main container */
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    height: 100vh;
+    width: 100vh;
+}
+
+/* Style for the logo container */
+
+.logo-container {
+    background-image: url("./resources/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.logo {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    opacity: 45%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-text {
+    font-family: norse-bold, sans-serif;
+    font-size: 5rem;
+}
+
+#odin-logo {
+    height: 50%;
+    width: 50%;
+}
+
+.cred {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.cred a {
+    text-decoration: underline;
+    color: white;
+}
+
+.cred a:visited {
+    color: white;
 }
