@@ -23,36 +23,53 @@
         </div>
         <div class="form-container">
             <div class="text">
-                <p>This is not a real online service! You know you need something like this in your life to help you
+                <h3>This is not a real online service! You know you need something like this in your life to help you
                     realize your deepest dreams.
                     Sign up <em>now</em> to get started.
-                </p>
-                <p>
+                </h3>
+                <h3>
                     You <em>know</em> you want to.
-                </p>
+                </h3>
             </div>
             <div class="form">
+                <h3 class="form-header">Let's do this!</h3>
                 <form action="index.html">
 
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <div class="left-input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
 
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <div class="right-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
+                    <div class="left-input">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
 
-                    <label for="phone-number">Phone Number</label>
-                    <input type="text" id="phone-number" name="phone-number">
+                    <div class="right-input">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number" name="phone-number">
+                    </div>
 
-                    <label for="password">Password</label>
-                    <input type="text" id="password" name="password">
+                    <div class="left-input">
+                        <label for="password">Password</label>
+                        <input type="text" id="password" name="password" required>
+                    </div>
 
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="text" id="confirm-password" name="confirm-password">
+                    <div class="right-input">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="text" id="confirm-password" name="confirm-password" required>
+                    </div>
 
                 </form>
+            </div>
+            <div class="buttons">
+                <button>Create Account</button>
+                <p>Already have an account? <a class="login-button" href="#">Login</a></p>
             </div>
         </div>
     </div>
